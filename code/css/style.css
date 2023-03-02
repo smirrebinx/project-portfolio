@@ -3,26 +3,34 @@
 @import url("css/satoshi.css");
 
 @font-face {
+  font-family: SatoshiRegular;
+  font-weight: normal;
+  src: url("fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf");
+}
+
+@font-face {
   font-family: SatoshiBold;
   font-weight: bold;
-  src: url("./Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
+  src: url("fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
 }
 
 @font-face {
   font-family: SatoshiMedium;
   font-weight: medium;
-  src: url("./Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+  src: url("fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
 }
 
 @font-face {
   font-family: SatoshiBlack;
   font-weight: bolder;
-  src: url("./Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
+  src: url("fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
 }
 
 :root {
   --headings-font-family: "Satoshi-Bold", bold;
   --paragraph-font-family: "Satoshi-Medium", medium;
+  --primary-text-color: #0b24f5;
+  --primary-background-color: #94b1aa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -50,7 +58,7 @@ p {
 }
 
 .title h1 {
-  color: #0b24f5;
+  color: var(--primary-text-color);
   font-size: 1.2em;
   margin-bottom: 0;
 }
@@ -68,24 +76,40 @@ p {
 .fa-linkedin-in,
 .fa-github {
   margin: 20px 10px 20px 20px;
+  color: #000;
 }
 
-.fa-github {
+/* .fa-github {
   color: lightgrey;
-}
+} */
 
 .scroll {
   text-align: center;
+  color: var(--primary-text-color);
 }
 
 .fa-arrow-down-long {
   font-size: 18px;
-  color: #0b24f5;
 }
 
 .scroll p {
-  color: #0b24f5;
   font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.tech {
+  padding: 80px 30px 80px 30px;
+  background-color: var(--primary-background-color);
+}
+
+.tech h3 {
+  color: var(--primary-text-color);
+  font-size: 2.9em;
+  text-align: center;
+}
+
+.tech p {
+  margin: 30px;
 }
 
 /*tablet*/

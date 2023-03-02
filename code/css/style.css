@@ -1,0 +1,160 @@
+/* project-portfolio */
+
+@import url("css/satoshi.css");
+
+@font-face {
+  font-family: SatoshiBold;
+  font-weight: bold;
+  src: url("./Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
+}
+
+@font-face {
+  font-family: SatoshiMedium;
+  font-weight: medium;
+  src: url("./Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+}
+
+@font-face {
+  font-family: SatoshiBlack;
+  font-weight: bolder;
+  src: url("./Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
+}
+
+:root {
+  --headings-font-family: "Satoshi-Bold", bold;
+  --paragraph-font-family: "Satoshi-Medium", medium;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-img {
+  display: none;
+}
+
+.profilepicturebox img {
+  display: block;
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+
+h1,
+h2 {
+  margin-left: 20px;
+  font-family: var(--headings-font-family);
+}
+
+p {
+  font-family: var(--paragraph-font-family);
+}
+
+.title h1 {
+  color: #0b24f5;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.title h2 {
+  font-size: 1.4em;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.profile-paragraph {
+  margin: 0 20px 0 20px;
+}
+
+.fa-linkedin-in,
+.fa-github {
+  margin: 20px 10px 20px 20px;
+}
+
+.fa-github {
+  color: lightgrey;
+}
+
+.scroll {
+  text-align: center;
+}
+
+.fa-arrow-down-long {
+  font-size: 18px;
+  color: #0b24f5;
+}
+
+.scroll p {
+  color: #0b24f5;
+  font-weight: bold;
+}
+
+/*tablet*/
+@media ((min-width: 668px) and (max-width: 1023px)) {
+  .logo-img {
+    display: block;
+    align-content: top;
+  }
+
+  .grid-parent-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .grid-parent-profile-img-and-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+
+  .profilepicturebox img {
+    width: 20%;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .title {
+    margin-top: 80px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .logo-img {
+    display: flex;
+  }
+
+  .grid-parent-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1px;
+  }
+
+  .grid-parent-profile-img-and-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+  /* 
+  .grid-item-profile-img-and-title {
+    background-color: pink;
+  } */
+
+  /* .logo-grid-item {
+    grid-column: span 1;
+  } */
+
+  .profilepicturebox img {
+    width: 20%;
+    height: auto;
+    margin-top: 150px;
+  }
+
+  .title {
+    margin-top: 170px;
+  }
+
+  .scroll {
+    margin-top: 400px;
+  }
+}

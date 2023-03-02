@@ -1,0 +1,38 @@
+.profilepicturebox img {
+  display: block;
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.title h1,
+h2 {
+  margin-left: 20px;
+}
+
+.title h1 {
+  color: #0b24f5;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.title h2 {
+  font-size: 1.4em;
+  font-weight: 900;
+  margin-top: 0;
+}
+
+.profile-paragraph {
+  margin: 0 20px 0 20px;
+}
+
+.fa-linkedin-in,
+.fa-github {
+  margin: 20px 10px 20px 20px;
+}
+
+.fa-github {
+  color: lightgrey;
+}

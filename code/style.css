@@ -1,3 +1,7 @@
+.logo-img {
+  display: none;
+}
+
 .profilepicturebox img {
   display: block;
   border-radius: 50%;
@@ -35,4 +39,49 @@ h2 {
 
 .fa-github {
   color: lightgrey;
+}
+
+/*tablet*/
+@media ((min-width: 668px) and (max-width: 1023px)) {
+  .logo-img {
+    display: block;
+  }
+
+  .logo {
+    width: 100%;
+    height: 50%;
+  }
+
+  .medium-grid-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .logo-img {
+    display: block;
+  }
+
+  .grid-parent-header {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+  }
+
+  .grid-parent-profile-img-and-title {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .profilepicturebox img {
+    width: 20%;
+    height: auto;
+    margin-top: 150px;
+  }
+
+  .title {
+    margin-top: 150px;
+  }
 }

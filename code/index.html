@@ -10,12 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/satoshi.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/818262a977.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Michelle Wegler Portfolio 😸</title>
   </head>
   <body>
     <header>
@@ -84,12 +85,18 @@
         <p>Let's scroll</p>
       </div>
       <div class="tech">
-        <h3>Tech</h3>
-        <p>
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
-          Node.js, Mongo DB, Web Accessibility, API:s, mob-programming,
-          pair-programming, Github
-        </p>
+        <div class="flex-parent">
+          <div class="flex-child">
+            <h3>Tech</h3>
+          </div>
+          <div class="flex-child">
+            <p>
+              HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks,
+              Redux, Node.js, Mongo DB, Web Accessibility, API:s,
+              mob-programming, pair-programming, Github
+            </p>
+          </div>
+        </div>
       </div>
       <div class="featured-projects">
         <h3>Featured Projects</h3>
@@ -98,15 +105,42 @@
           src="../images/a_cat.jpg"
           alt="Chatbot"
         />
+        <h4>Chatbot</h4>
         <p>
           The chat bot app... Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Possimus, delectus illo hic molestiae perferendis
           libero unde. Tenetur at nemo consequuntur modi. Iste porro consequatur
           voluptatibus molestias alias ut eius laboriosam.
         </p>
-        <p class="techniques">HTML5</p>
-        <p class="techniques">CSS3</p>
-        <p class="techniques">JavaScript</p>
+        <div class="flex-parent-highlight">
+          <div class="flex-child-highlight">
+            <p>HTML5<span class="sr-only">HTML5</span></p>
+          </div>
+          <div class="flex-child-highlight">
+            <p>JavaScript<span class="sr-only">JavaScript</span></p>
+          </div>
+          <div class="flex-child-highlight">
+            <p>CSS3<span class="sr-only">CSS3</span></p>
+          </div>
+        </div>
+        <a
+          href="https://github.com/smirrebinx"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="color1-btn">
+            <i class="fab fa-github" aria-hidden="true"></i
+            ><span class="sr-only">Github</span>View the code
+          </button></a
+        >
+        <a
+          href="https://melodic-stardust-81c7d1.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="color2-btn">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i
+            ><span class="sr-only">Github</span>Live demo
+          </button></a
+        >
       </div>
     </div>
   </body>

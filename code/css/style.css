@@ -5,29 +5,29 @@
 @font-face {
   font-family: SatoshiRegular;
   font-weight: normal;
-  src: url(".fonts/Satoshi-Regular.otf");
+  src: url("./fonts/Satoshi-Regular.otf");
 }
 
 @font-face {
   font-family: SatoshiBold;
   font-weight: bold;
-  src: url("fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf");
+  src: url("./fonts/Satoshi-Bold.otf");
 }
 
 @font-face {
   font-family: SatoshiMedium;
   font-weight: medium;
-  src: url("fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf");
+  src: url("./fonts/Satoshi-Medium.otf");
 }
 
 @font-face {
   font-family: SatoshiBlack;
   font-weight: bolder;
-  src: url("fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
+  src: url("./fonts/Satoshi-Black.otf");
 }
 
 :root {
-  --headings-font-family: "Satoshi-Regular", regular;
+  --headings-font-family: "Satoshi-Bold", bold;
   --paragraph-font-family: "EB Garamond", serif;
   --primary-text-color: #0b24f5;
   --primary-background-color: #94b1aa;
@@ -48,7 +48,9 @@
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   margin-left: 20px;
   font-family: var(--headings-font-family);
 }
@@ -128,7 +130,11 @@ p {
   font-size: 22px;
 }
 
-.techniques {
+.flex-parent-highlight {
+  display: flex;
+}
+
+.flex-child-highlight {
   background-color: #000;
   color: #fff;
 }
@@ -201,5 +207,47 @@ p {
 
   .scroll {
     margin-top: 400px;
+  }
+
+  .flex-parent {
+    display: flex;
+  }
+
+  .flex-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .color1-btn {
+    background-color: #eb5577;
+  }
+
+  .color2-btn {
+    background-color: #0b24f5;
+  }
+
+  .featured-projects img {
+    width: 50%;
+    size: auto;
+  }
+
+  .featured-projects .fa-github,
+  .fa-globe,
+  button {
+    color: #fff;
+  }
+
+  .featured-projects .fa-github,
+  .fa-globe {
+    font-size: 28px;
+  }
+
+  .featured-projects button {
+    border-radius: 40px;
+    border: none;
+    padding: 0 16px 0 0;
+    margin: 20px;
+    text-align: center;
   }
 }

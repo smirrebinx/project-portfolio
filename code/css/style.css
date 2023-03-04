@@ -3,9 +3,14 @@
 :root {
   --headings-font-family: "Satoshi-Bold", bold;
   --paragraph-font-family: "EB Garamond", serif;
-  --primary-text-color: #568b7f;
-  --secondary-text-color: #94b1aa;
+  --primary-text-color: #000;
+  --secondary-text-color: #568b7f;
+  --tertiary-text-color: #fff;
   --primary-background-color: #cfe9e3;
+  --secondary-background-color: #94b1aa;
+  --btn1-color: #94b1aa;
+  --btn2-color: #f4f6f6;
+  --btn3-color: #e3e9e9;
   --drop-shadow: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -65,10 +70,11 @@ h4 {
 
 p {
   font-family: var(--paragraph-font-family);
+  color: var(--primary-text-color);
 }
 
 .title h1 {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   font-size: 1.2em;
   margin-bottom: 0;
 }
@@ -86,7 +92,7 @@ p {
 .fa-linkedin-in,
 .fa-github {
   margin: 20px 10px 20px 20px;
-  color: var(--primary-text-color);
+  color: var(--secondary-background-color);
   opacity: 0.6;
 }
 
@@ -97,7 +103,7 @@ p {
 
 .scroll {
   text-align: center;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .fa-arrow-down-long {
@@ -115,7 +121,7 @@ p {
 }
 
 .tech h3 {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   font-size: 2.9em;
   text-align: center;
 }
@@ -124,13 +130,14 @@ p {
   margin: 30px;
 }
 
-.featured-projects-img {
+.featured-projects-img,
+.my-words-img {
   width: 100%;
   height: auto;
 }
 
 .featured-projects h3 {
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   font-size: 2.9em;
   text-align: center;
 }
@@ -156,9 +163,8 @@ p {
 }
 
 .featured-projects .fa-github,
-.fa-globe,
-button {
-  color: #fff;
+.fa-globe {
+  color: var(--primary-text-color);
 }
 
 .featured-projects .fa-github,
@@ -192,19 +198,65 @@ button {
 }
 
 .color1-btn {
-  background-color: #eb5577;
+  background-color: var(--btn1-color);
 }
 
 .color1-btn:hover {
-  background-color: #ff847c;
+  background-color: var(--btn2-color);
 }
 
 .color2-btn {
-  background-color: #0b24f5;
+  background-color: var(--btn2-color);
 }
 
 .color2-btn:hover {
-  background-color: #79c2d0;
+  background-color: var(--btn1-color);
+}
+
+.date {
+  color: var(--secondary-text-color);
+  text-align: left;
+}
+
+.my-words {
+  padding: 80px 30px 80px 30px;
+  background-color: var(--primary-background-color);
+}
+
+.my-words h3 {
+  color: var(--secondary-text-color);
+  font-size: 2.9em;
+  text-align: center;
+}
+
+.my-words p {
+  margin: 30px;
+}
+
+.my-words p {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.my-words button {
+  border-radius: 40px;
+  border: none;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 164px;
+  height: 48px;
+  filter: var(--drop-shadow);
+}
+
+.read-article-btn {
+  background-color: var(--btn3-color);
+}
+
+.read-article-btn:hover {
+  background-color: var(--btn1-color);
 }
 
 /*tablet*/
@@ -278,7 +330,11 @@ button {
     max-width: 500px;
     height: 145px;
     top: 196px;
-    margin: 0px 0px 58px 44px;
+    margin: 0px 0px 0px 44px;
+  }
+
+  .icons {
+    margin-left: 100px;
   }
 
   .title {
@@ -318,12 +374,6 @@ button {
   }
 
   .featured-projects .fa-github,
-  .fa-globe,
-  button {
-    color: #fff;
-  }
-
-  .featured-projects .fa-github,
   .fa-globe {
     font-size: 18px;
     margin: 0;
@@ -351,21 +401,5 @@ button {
     width: 164px;
     height: 48px;
     filter: var(--drop-shadow);
-  }
-
-  .color1-btn {
-    background-color: #eb5577;
-  }
-
-  .color1-btn:hover {
-    background-color: #ff847c;
-  }
-
-  .color2-btn {
-    background-color: #0b24f5;
-  }
-
-  .color2-btn:hover {
-    background-color: #79c2d0;
   }
 }

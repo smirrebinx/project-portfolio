@@ -8,6 +8,7 @@
   --tertiary-text-color: #fff;
   --primary-background-color: #cfe9e3;
   --secondary-background-color: #94b1aa;
+  --tertiary-background-color: #edfaf7;
   --btn1-color: #94b1aa;
   --btn2-color: #f4f6f6;
   --btn3-color: #e3e9e9;
@@ -220,7 +221,7 @@ p {
 
 .my-words {
   padding: 80px 30px 80px 30px;
-  background-color: var(--primary-background-color);
+  background-color: var(--tertiary-background-color);
 }
 
 .my-words h3 {
@@ -251,12 +252,62 @@ p {
   filter: var(--drop-shadow);
 }
 
+.skills {
+  padding: 80px 30px 80px 30px;
+  background-color: var(--primary-background-color);
+}
+
+.skills h3 {
+  color: var(--secondary-text-color);
+  font-size: 2.9em;
+  text-align: center;
+}
+
+.skills p {
+  margin: 30px;
+}
+
+.skills p {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.skills button {
+  border-radius: 40px;
+  border: none;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 164px;
+  height: 48px;
+  filter: var(--drop-shadow);
+}
+
+.skills-ul {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.skills-ul li {
+  text-align: center;
+}
+
 .read-article-btn {
   background-color: var(--btn3-color);
 }
 
 .read-article-btn:hover {
   background-color: var(--btn1-color);
+}
+
+.time-to-talk-header {
+  color: var(--secondary-text-color);
+  font-size: 4em;
+  text-align: center;
 }
 
 /*tablet*/

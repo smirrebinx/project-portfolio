@@ -11,7 +11,7 @@
   --tertiary-background-color: #edfaf7;
   --btn1-color: #94b1aa;
   --btn2-color: #f4f6f6;
-  --btn3-color: #fff;
+  --btn3-color: #fdf6f6;
   --drop-shadow: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -72,21 +72,23 @@ h4 {
   font-family: var(--headings-font-family);
 }
 
-p {
+p,
+button {
   font-size: 22px;
 }
 
 p,
-a {
+button {
   font-family: var(--paragraph-font-family);
   color: var(--primary-text-color);
 }
 
-a {
+button {
   text-decoration: none;
+  border: none;
 }
 
-a:hover {
+button:hover {
   text-decoration: underline;
 }
 
@@ -207,7 +209,7 @@ a:hover {
   margin-right: 4px;
 }
 
-.feature-projects-btn {
+.feature-projects-btn button {
   width: 8%;
   padding: 10px;
   border-radius: 20px;
@@ -215,6 +217,9 @@ a:hover {
   margin: 5px 0 50px 0;
   text-align: center;
   filter: var(--drop-shadow);
+}
+
+.color1-btn {
   background-color: var(--btn1-color);
 }
 
@@ -231,6 +236,14 @@ a:hover {
 }
 
 .color2-btn:hover {
+  background-color: var(--btn1-color);
+}
+
+.color3-btn {
+  background-color: var(--btn2-color);
+}
+
+.color3-btn:hover {
   background-color: var(--btn1-color);
 }
 
@@ -272,7 +285,7 @@ a:hover {
   filter: var(--drop-shadow);
 }
 
-.read-article-btn {
+.read-article-btn button {
   display: flex;
   background-color: var(--btn3-color);
   width: 50%;
@@ -488,8 +501,12 @@ a:hover {
     margin-right: 4px;
   }
 
+  .featured-projects button {
+    width: 10%;
+  }
+
   .my-words img {
-    width: 30%;
+    width: 25%;
   }
 
   .read-article-btn {

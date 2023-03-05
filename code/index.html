@@ -69,7 +69,7 @@
             </div>
           </div>
           <div class="grid-item-header medium-grid-item">
-            <div class="logo">
+            <div class="logo-container">
               <img
                 class="logo-img"
                 src="../images/homepage.png"
@@ -80,12 +80,11 @@
         </div>
       </section>
     </header>
-
     <div class="container">
-      <div class="scroll">
+      <!-- <div class="scroll">
         <i class="fa-solid fa-arrow-down-long"></i>
         <p>Let's scroll</p>
-      </div>
+      </div> -->
       <section class="tech-section">
         <div class="tech">
           <div class="flex-parent">
@@ -94,9 +93,11 @@
             </div>
             <div class="flex-child">
               <p>
-                HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks,
-                Redux, Node.js, Mongo DB, Web Accessibility, API:s,
-                mob-programming, pair-programming, Github.
+                HTML, <span class="highlight-one">CSS</span>, Flexbox,
+                JavaScript, ES6, JSX, <span class="highlight-two">React</span>,
+                React Hooks, Redux, Node.js, Mongo DB, Web Accessibility, API:s,
+                mob-programming <span class="highlight-three">Github</span>,
+                pair-programming.
               </p>
             </div>
           </div>
@@ -113,10 +114,10 @@
           />
           <h4>News Site</h4>
           <p>
-            News Site... Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Possimus, delectus illo hic molestiae perferendis libero unde.
-            Tenetur at nemo consequuntur modi. Iste porro consequatur
-            voluptatibus molestias alias ut eius laboriosam.
+            This site mimics a classic magazine about the best animals in the
+            world: Cats. The site contains interesting facts and tips for pet
+            ownership, and quotes pertaining to cats. This project was built
+            using HTML and CSS, using CSS Grid and CSS Flex.
           </p>
           <div class="flex-parent-highlight">
             <div class="flex-child-highlight">
@@ -130,28 +131,16 @@
             </div>
           </div>
           <div class="feature-projects-btn">
-            <a
-              href="https://github.com/smirrebinx/project-news-site"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><button class="color1-btn">
-                <p>
-                  <i class="fab fa-github" aria-hidden="true"></i
-                  ><span class="sr-only">Github</span>View the code
-                </p>
-              </button></a
-            >
-
-            <a
-              href="https://github.com/smirrebinx/project-news-site"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button class="color1-btn">
+            <div class="color1-btn">
+              <a
+                href="https://github.com/smirrebinx/project-news-site"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fab fa-github" aria-hidden="true"></i
                 ><span class="sr-only">Github</span>View the code
-              </button>
-            </a>
+              </a>
+            </div>
 
             <a
               href="https://jazzy-florentine-47e1e7.netlify.app/"
@@ -173,10 +162,10 @@
           />
           <h4>Chatbot</h4>
           <p>
-            The chat bot app... Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Possimus, delectus illo hic molestiae perferendis
-            libero unde. Tenetur at nemo consequuntur modi. Iste porro
-            consequatur voluptatibus molestias alias ut eius laboriosam.
+            This project contains eventlisteners for the form submit event. The
+            value from the input is stored and posted as a message from the user
+            and progress to the next question. This project was built using
+            HTML, CSS and JavaScript.
           </p>
           <div class="flex-parent-highlight">
             <div class="flex-child-highlight">
@@ -222,59 +211,10 @@
           />
           <h4>Guess Who</h4>
           <p>
-            The Guess Who Game... Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Possimus, delectus illo hic molestiae perferendis
-            libero unde. Tenetur at nemo consequuntur modi. Iste porro
-            consequatur voluptatibus molestias alias ut eius laboriosam.
-          </p>
-          <div class="flex-parent-highlight">
-            <div class="flex-child-highlight">
-              <p>HTML5<span class="sr-only">HTML5</span></p>
-            </div>
-            <div class="flex-child-highlight">
-              <p>JavaScript<span class="sr-only">JavaScript</span></p>
-            </div>
-            <div class="flex-child-highlight">
-              <p>CSS3<span class="sr-only">CSS3</span></p>
-            </div>
-          </div>
-          <div class="feature-projects-btn">
-            <a
-              href="https://github.com/smirrebinx/project-weather-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><button class="color2-btn">
-                <p>
-                  <i class="fab fa-github" aria-hidden="true"></i
-                  ><span class="sr-only">Github</span>View the code
-                </p>
-              </button></a
-            >
-            <a
-              href="https://project-weather-app-michelle-emma.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><button class="color2-btn">
-                <p>
-                  <i class="fa-solid fa-globe" aria-hidden="true"></i
-                  ><span class="sr-only">Live demo</span> Live demo
-                </p>
-              </button></a
-            >
-          </div>
-
-          <!-- Weather App -->
-          <img
-            class="featured-projects-img"
-            src="../images/a_cat.jpg"
-            alt="Weather App"
-          />
-          <h4>Weather App</h4>
-          <p>
-            The Weather App, pair-programmed... Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Possimus, delectus illo hic molestiae
-            perferendis libero unde. Tenetur at nemo consequuntur modi. Iste
-            porro consequatur voluptatibus molestias alias ut eius laboriosam.
+            This is a web-based implementation of the classic Guess Who board
+            game, where the player has to guess a secret person from a board
+            with different characters. The project was built using HTML, CSS,
+            and JavaScript.
           </p>
           <div class="flex-parent-highlight">
             <div class="flex-child-highlight">
@@ -312,6 +252,56 @@
             >
           </div>
 
+          <!-- Weather App -->
+          <img
+            class="featured-projects-img"
+            src="../images/a_cat.jpg"
+            alt="Weather App"
+          />
+          <h4>Weather App</h4>
+          <p>
+            This project is a simple weather dashboard that displays the current
+            weather and temperature, as well as a 5-day forecast. The data is
+            fetched from a weather API using the fetch() function in JavaScript.
+            This project was pair-programmed. The project was built using HTML,
+            CSS, JavaScript and a Weather API.
+          </p>
+          <div class="flex-parent-highlight">
+            <div class="flex-child-highlight">
+              <p>HTML5<span class="sr-only">HTML5</span></p>
+            </div>
+            <div class="flex-child-highlight">
+              <p>JavaScript<span class="sr-only">JavaScript</span></p>
+            </div>
+            <div class="flex-child-highlight">
+              <p>CSS3<span class="sr-only">CSS3</span></p>
+            </div>
+          </div>
+          <div class="feature-projects-btn">
+            <a
+              href="https://github.com/smirrebinx/project-weather-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button class="color2-btn">
+                <p>
+                  <i class="fab fa-github" aria-hidden="true"></i
+                  ><span class="sr-only">Github</span>View the code
+                </p>
+              </button></a
+            >
+            <a
+              href="https://project-weather-app-michelle-emma.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button class="color2-btn">
+                <p>
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i
+                  ><span class="sr-only">Live demo</span> Live demo
+                </p>
+              </button></a
+            >
+          </div>
+
           <!-- Portfolio SheCodes -->
           <img
             class="featured-projects-img"
@@ -320,11 +310,9 @@
           />
           <h4>Portfolio Shecodes</h4>
           <p>
-            Portfolio SheCodes Workshops and previous projects... Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Possimus, delectus
-            illo hic molestiae perferendis libero unde. Tenetur at nemo
-            consequuntur modi. Iste porro consequatur voluptatibus molestias
-            alias ut eius laboriosam.
+            This project is a portfolio created in the SheCodes' Workshops and
+            features previous projects. The project was built with HTML, CSS
+            with Bootstrap and Javascript.
           </p>
           <div class="flex-parent-highlight">
             <div class="flex-child-highlight">
@@ -377,14 +365,12 @@
             components (i.e., content) in a way to satisfy a particular
             objective.
           </p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><button class="read-article-btn">
-              <p>
-                <i class="fa-regular fa-newspaper" aria-hidden="true"></i
-                ><span class="sr-only">Read Article</span> Read Article
-              </p>
-            </button></a
-          >
+          <div class="read-article-btn">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-newspaper" aria-hidden="true"></i
+              ><span class="sr-only">Read Article</span> Read Article
+            </a>
+          </div>
           <!-- Second article -->
           <img class="my-words-img" src="../images/blog.png" alt="Chatting" />
           <p class="date">February 2023</p>
@@ -396,14 +382,12 @@
             components (i.e., content) in a way to satisfy a particular
             objective.
           </p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><button class="read-article-btn">
-              <p>
-                <i class="fa-regular fa-newspaper" aria-hidden="true"></i
-                ><span class="sr-only">Read Article</span> Read Article
-              </p>
-            </button></a
-          >
+          <div class="read-article-btn">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-newspaper" aria-hidden="true"></i
+              ><span class="sr-only">Read Article</span> Read Article
+            </a>
+          </div>
           <!-- Third article -->
           <img class="my-words-img" src="../images/blog.png" alt="Chatting" />
           <p class="date">March 2023</p>
@@ -415,14 +399,12 @@
             components (i.e., content) in a way to satisfy a particular
             objective.
           </p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><button class="read-article-btn">
-              <p>
-                <i class="fa-regular fa-newspaper" aria-hidden="true"></i
-                ><span class="sr-only">Read Article</span> Read Article
-              </p>
-            </button></a
-          >
+          <div class="read-article-btn">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-newspaper" aria-hidden="true"></i
+              ><span class="sr-only">Read Article</span> Read Article
+            </a>
+          </div>
           <!-- Fourth article -->
           <img class="my-words-img" src="../images/blog.png" alt="Chatting" />
           <p class="date">April 2023</p>
@@ -434,58 +416,56 @@
             components (i.e., content) in a way to satisfy a particular
             objective.
           </p>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><button class="read-article-btn">
-              <p>
-                <i class="fa-regular fa-newspaper" aria-hidden="true"></i
-                ><span class="sr-only">Read Article</span> Read Article
-              </p>
-            </button></a
-          >
+          <div class="read-article-btn">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i class="fa-regular fa-newspaper" aria-hidden="true"></i
+              ><span class="sr-only">Read Article</span> Read Article
+            </a>
+          </div>
         </div>
       </section>
+      <!-- Skills -->
       <section class="skills-section">
-        <div class="skills">
-          <h3>Skills</h3>
-          <div class="flex-parent">
-            <div class="flex-child">
-              <ul class="skills-ul">
-                <li>Code</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript ES6</li>
-                <li>React</li>
-                <li>Styled Components</li>
-                <li>GitHub</li>
-              </ul>
-            </div>
-            <div class="flex-child">
-              <ul class="skills-ul">
-                <li>Toolbox</li>
-                <li>Atom</li>
-                <li>Postman</li>
-                <li>Figma</li>
-                <li>Slack</li>
-              </ul>
-            </div>
-            <div class="flex-child">
-              <ul class="skills-ul">
-                <li>More</li>
-                <li>Agile Methodology</li>
-              </ul>
-            </div>
-            <div class="flex-child">
-              <ul class="skills-ul">
-                <li>Upcoming</li>
-                <li>Redux</li>
-                <li>Node.js</li>
-              </ul>
-            </div>
+        <h3>Skills</h3>
+        <div class="skills-flex-parent">
+          <div class="flex-child-skills">
+            <h4><span class="highlight-header-one">Code</span></h4>
+            <ul class="skills-ul">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript ES6</li>
+              <li>React</li>
+              <li>Styled Components</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+          <div class="flex-child-skills">
+            <h4><span class="highlight-header-two">Toolbox</span></h4>
+            <ul class="skills-ul">
+              <li>Atom</li>
+              <li>Postman</li>
+              <li>Figma</li>
+              <li>Slack</li>
+            </ul>
+          </div>
+          <div class="flex-child-skills">
+            <h4><span class="highlight-header-three">More</span></h4>
+            <ul class="skills-ul">
+              <li>Agile Methodology</li>
+            </ul>
+          </div>
+          <div class="flex-child-skills">
+            <h4><span class="highlight-header-four">Upcoming</span></h4>
+            <ul class="skills-ul">
+              <li>Redux</li>
+              <li>Node.js</li>
+            </ul>
           </div>
         </div>
       </section>
       <!-- Time to Talk -->
       <section class="time-to-talk-section">
+        <h2 class="time-to-talk-header">Time to Talk</h2>
         <div class="grid-item-header">
           <div class="grid-parent-profile-img-and-title">
             <div class="grid-item-profile-img-and-title">
@@ -497,10 +477,7 @@
                 />
               </div>
             </div>
-
             <div class="grid-item-profile-img-and-title">
-              <h2 class="time-to-talk-header">Time to Talk</h2>
-
               <div class="title">
                 <h3>Michelle Wegler</h3>
                 <h4>Frontend Developer</h4>
@@ -525,7 +502,6 @@
           </div>
         </div>
       </section>
-
       <!-- End -->
     </div>
   </body>

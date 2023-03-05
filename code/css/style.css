@@ -24,24 +24,6 @@
   src: url("./fonts/Satoshi-Regular.otf");
 }
 
-@font-face {
-  font-family: SatoshiBold;
-  font-weight: bold;
-  src: url("./fonts/Satoshi-Bold.otf");
-}
-
-@font-face {
-  font-family: SatoshiMedium;
-  font-weight: medium;
-  src: url("./fonts/Satoshi-Medium.otf");
-}
-
-@font-face {
-  font-family: SatoshiBlack;
-  font-weight: bolder;
-  src: url("./fonts/Satoshi-Black.otf");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +56,8 @@ button {
 }
 
 p,
-button {
+button,
+ul {
   font-family: var(--paragraph-font-family);
   color: var(--primary-text-color);
 }
@@ -509,11 +492,6 @@ h2 {
     max-width: 25%;
   }
 
-  .featured-projects img {
-    width: 20%;
-    size: auto;
-  }
-
   .featured-projects .fa-github,
   .fa-globe {
     font-size: 18px;
@@ -599,7 +577,7 @@ h2 {
   }
 
   .time-to-talk-section h3,
-  h4 {
+  .time-to-talk-section h4 {
     text-align: center;
   }
 

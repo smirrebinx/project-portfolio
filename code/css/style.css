@@ -11,7 +11,7 @@
   --tertiary-background-color: #edfaf7;
   --btn1-color: #94b1aa;
   --btn2-color: #f4f6f6;
-  --btn3-color: #e3e9e9;
+  --btn3-color: #fff;
   --drop-shadow: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -48,7 +48,11 @@
   box-sizing: border-box;
 }
 
-.logo-img {
+body {
+  width: 100%;
+}
+
+.logo-container .logo-container img {
   display: none;
 }
 
@@ -65,13 +69,25 @@ h1,
 h2,
 h3,
 h4 {
-  margin-left: 20px;
   font-family: var(--headings-font-family);
 }
 
 p {
+  font-size: 22px;
+}
+
+p,
+a {
   font-family: var(--paragraph-font-family);
   color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .title h1 {
@@ -102,7 +118,7 @@ p {
   opacity: 1;
 }
 
-.scroll {
+/* .scroll {
   text-align: center;
   color: var(--secondary-text-color);
 }
@@ -114,7 +130,7 @@ p {
 .scroll p {
   font-weight: bold;
   margin-bottom: 40px;
-}
+} */
 
 .tech {
   padding: 80px 30px 80px 30px;
@@ -131,6 +147,18 @@ p {
   margin: 30px;
 }
 
+.highlight-one {
+  background-color: var(--secondary-text-color);
+}
+
+.highlight-two {
+  background-color: var(--tertiary-background-color);
+}
+
+.highlight-three {
+  background-color: var(--secondary-background-color);
+}
+
 .featured-projects-img,
 .my-words-img {
   width: 100%;
@@ -145,7 +173,6 @@ p {
 
 .featured-projects p {
   margin: 30px;
-  font-size: 22px;
 }
 
 .flex-parent-highlight {
@@ -180,26 +207,19 @@ p {
   margin-right: 4px;
 }
 
-.feature-projects-btn p {
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
+.feature-projects-btn {
+  width: 8%;
+  padding: 10px;
+  border-radius: 20px;
   text-align: center;
-}
-
-.feature-projects-btn button {
-  border-radius: 40px;
-  border: none;
-  margin: 20px;
+  margin: 5px 0 50px 0;
   text-align: center;
-  cursor: pointer;
-  width: 164px;
-  height: 48px;
   filter: var(--drop-shadow);
+  background-color: var(--btn1-color);
 }
 
-.color1-btn {
-  background-color: var(--btn1-color);
+.color1-btn a {
+  text-decoration: none;
 }
 
 .color1-btn:hover {
@@ -215,7 +235,7 @@ p {
 }
 
 .date {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   text-align: left;
 }
 
@@ -252,37 +272,55 @@ p {
   filter: var(--drop-shadow);
 }
 
-.skills {
+.read-article-btn {
+  display: flex;
+  background-color: var(--btn3-color);
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px 0 50px 0;
+  filter: var(--drop-shadow);
+}
+
+.read-article-btn:hover {
+  background-color: var(--btn2-color);
+}
+
+.time-to-talk-header {
+  color: var(--secondary-text-color);
+  font-size: 4em;
+  text-align: center;
+}
+
+.skills-flex-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-child-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.skills-section {
   padding: 80px 30px 80px 30px;
   background-color: var(--primary-background-color);
 }
 
-.skills h3 {
+.skills-section h3 {
   color: var(--secondary-text-color);
   font-size: 2.9em;
   text-align: center;
 }
 
-.skills p {
-  margin: 30px;
-}
-
-.skills p {
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
+.skills-section h4 {
   text-align: center;
-}
-
-.skills button {
-  border-radius: 40px;
-  border: none;
-  margin: 20px;
-  text-align: center;
-  cursor: pointer;
-  width: 164px;
-  height: 48px;
-  filter: var(--drop-shadow);
 }
 
 .skills-ul {
@@ -296,25 +334,38 @@ p {
   text-align: center;
 }
 
-.read-article-btn {
-  background-color: var(--btn3-color);
+.highlight-header-one {
+  background-color: var(--secondary-text-color);
 }
 
-.read-article-btn:hover {
-  background-color: var(--btn1-color);
+.highlight-header-two {
+  background-color: var(--tertiary-background-color);
 }
 
-.time-to-talk-header {
-  color: var(--secondary-text-color);
-  font-size: 4em;
+.highlight-header-three {
+  background-color: var(--secondary-background-color);
+}
+
+.highlight-header-four {
+  background-color: var(--tertiary-background-color);
+}
+
+.time-to-talk-section h2 {
   text-align: center;
 }
 
 /*tablet*/
 @media ((min-width: 668px) and (max-width: 1023px)) {
-  .logo-img {
-    display: block;
-    align-content: top;
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-container img {
+    display: flex;
   }
 
   .grid-parent-header {
@@ -341,51 +392,51 @@ p {
 
 /* desktop */
 @media (min-width: 1024px) {
-  .logo-img {
+  .logo-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-height: 80%;
-    margin-bottom: 0;
-    /* align-items: center;
-    justify-content: center; */
+    height: 100%;
+    background-color: var(--secondary-background-color);
+  }
+
+  .logo-container img {
+    display: flex;
+    justify-content: center;
   }
 
   .grid-parent-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    gap: 1px;
   }
 
   .grid-parent-profile-img-and-title {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
+    align-items: center;
   }
-  /* 
-  .grid-item-profile-img-and-title {
-    background-color: pink;
-  } */
 
-  /* .logo-grid-item {
-    grid-column: span 1;
-  } */
+  .grid-item-header {
+    margin-bottom: 100px;
+  }
 
   .profilepicturebox img {
     width: 40%;
     height: auto;
     margin-top: 150px;
+    margin-left: 200px;
   }
 
   .profile-paragraph {
     max-width: 500px;
     height: 145px;
     top: 196px;
-    margin: 0px 0px 0px 44px;
+    margin: 20px 0 0 200px;
   }
 
   .icons {
-    margin-left: 100px;
+    margin-left: 180px;
   }
 
   .title {
@@ -395,6 +446,7 @@ p {
   .fa-linkedin-in,
   .fa-github {
     font-size: 25px;
+    margin-top: 77px;
   }
 
   .scroll {
@@ -420,7 +472,7 @@ p {
   }
 
   .featured-projects img {
-    width: 50%;
+    width: 20%;
     size: auto;
   }
 
@@ -436,21 +488,40 @@ p {
     margin-right: 4px;
   }
 
-  .feature-projects-btn p {
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    text-align: center;
+  .my-words img {
+    width: 30%;
   }
 
-  .feature-projects-btn button {
-    border-radius: 40px;
-    border: none;
-    margin: 20px;
-    text-align: center;
-    cursor: pointer;
-    width: 164px;
-    height: 48px;
-    filter: var(--drop-shadow);
+  .read-article-btn {
+    width: 8%;
+  }
+
+  .skills-flex-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 66px;
+  }
+
+  .flex-child-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+    padding-bottom: 96px;
+  }
+
+  .time-to-talk-section h2 {
+    margin-top: 100px;
+  }
+
+  .time-to-talk-section img {
+    display: block;
+    border-radius: 50%;
+    width: 25%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
   }
 }

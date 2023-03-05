@@ -48,11 +48,7 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-}
-
-.logo-container .logo-container img {
+.logo-container .logo-img {
   display: none;
 }
 
@@ -84,18 +80,27 @@ button {
 }
 
 button {
-  text-decoration: none;
   border: none;
+  text-decoration: none;
 }
 
 button:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.header-section h1,
+h2 {
+  margin-left: 30px;
+}
+
+.header-section p {
+  margin-left: 10px;
 }
 
 .title h1 {
   color: var(--secondary-text-color);
   font-size: 1.2em;
-  margin-bottom: 0;
 }
 
 .title h2 {
@@ -106,6 +111,10 @@ button:hover {
 
 .profile-paragraph {
   margin: 0 20px 0 20px;
+}
+
+.icons {
+  margin-left: 10px;
 }
 
 .fa-linkedin-in,
@@ -161,6 +170,11 @@ button:hover {
   background-color: var(--secondary-background-color);
 }
 
+.featured-projects h4 {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 .featured-projects-img,
 .my-words-img {
   width: 100%;
@@ -209,18 +223,25 @@ button:hover {
   margin-right: 4px;
 }
 
+.feature-projects-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .feature-projects-btn button {
-  width: 8%;
-  padding: 10px;
+  padding: 8px 22px 8px 16px;
   border-radius: 20px;
   text-align: center;
-  margin: 5px 0 50px 0;
+
   text-align: center;
   filter: var(--drop-shadow);
 }
 
 .color1-btn {
   background-color: var(--btn1-color);
+  width: 60%;
+  margin: 5px 0px 5px 22px;
 }
 
 .color1-btn a {
@@ -233,6 +254,8 @@ button:hover {
 
 .color2-btn {
   background-color: var(--btn2-color);
+  width: 50%;
+  margin: 5px 0px 20px 22px;
 }
 
 .color2-btn:hover {
@@ -241,6 +264,8 @@ button:hover {
 
 .color3-btn {
   background-color: var(--btn2-color);
+  width: 60%;
+  margin: 5px 0px 20px 22px;
 }
 
 .color3-btn:hover {
@@ -505,11 +530,48 @@ button:hover {
     width: 10%;
   }
 
+  .featured-projects-flex-parent {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20% 0 20%;
+  }
+
+  .featured-projects-flex-child {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: fit-content;
+    margin-bottom: 15%;
+    margin-right: 20px;
+  }
+
+  .featured-projects h3 {
+    margin: 50px 0 45px 0;
+  }
+
+  .featured-projects h4 {
+    margin-left: 30px;
+  }
+
+  .featured-projects-flex-parent img {
+    width: 100%;
+  }
+
+  .feature-projects-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .feature-projects-btn button {
+    width: 100%;
+  }
+
   .my-words img {
     width: 25%;
   }
 
-  .read-article-btn {
+  .read-article-btn button {
     width: 8%;
   }
 
@@ -540,5 +602,21 @@ button:hover {
     height: auto;
     margin: auto;
     margin-top: 30px;
+  }
+
+  .time-to-talk-flex-parent {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .time-to-talk-flex-child {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }

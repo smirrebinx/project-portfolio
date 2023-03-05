@@ -430,6 +430,11 @@ h2 {
 
 /* desktop */
 @media (min-width: 1024px) {
+  .logo-container .logo-img {
+    display: flex;
+    justify-content: center;
+  }
+
   .logo-container {
     display: flex;
     justify-content: center;
@@ -437,11 +442,6 @@ h2 {
     width: 100%;
     height: 100%;
     background-color: var(--secondary-background-color);
-  }
-
-  .logo-container img {
-    display: flex;
-    justify-content: center;
   }
 
   .grid-parent-header {
@@ -487,9 +487,9 @@ h2 {
     margin-top: 77px;
   }
 
-  .scroll {
+  /* .scroll {
     margin-top: 400px;
-  }
+  } */
 
   .tech {
     margin-top: 50px;
@@ -517,7 +517,6 @@ h2 {
   .featured-projects .fa-github,
   .fa-globe {
     font-size: 18px;
-    margin: 0;
     padding: 0;
     text-align: center;
   }
@@ -591,17 +590,29 @@ h2 {
     padding-bottom: 96px;
   }
 
+  .time-to-talk-section {
+    margin: 0 20% 0 20%;
+  }
+
   .time-to-talk-section h2 {
     margin-top: 100px;
   }
 
+  .time-to-talk-section h3,
+  h4 {
+    text-align: center;
+  }
+
+  .time-to-talk-section h4 {
+    margin-bottom: 200px;
+  }
+
   .time-to-talk-section img {
-    display: block;
     border-radius: 50%;
     width: 25%;
     height: auto;
-    margin: auto;
-    margin-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   .time-to-talk-flex-parent {
@@ -609,7 +620,6 @@ h2 {
     flex-direction: row;
     text-align: center;
     align-items: center;
-    margin: 0 auto;
   }
 
   .time-to-talk-flex-child {
@@ -617,6 +627,5 @@ h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
   }
 }

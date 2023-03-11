@@ -41,6 +41,7 @@
   height: auto;
   margin: auto;
   margin-top: 30px;
+  border: solid var(--secondary-background-color);
 }
 
 h1,
@@ -260,29 +261,29 @@ h2 {
   text-align: left;
 }
 
-.my-words {
-  padding: 80px 30px 80px 30px;
+.my-words-container {
+  margin: 30px;
   background-color: var(--tertiary-background-color);
 }
 
-.my-words h3 {
+.my-words-container h3 {
   color: var(--secondary-text-color);
   font-size: 2.9em;
   text-align: center;
 }
 
-.my-words p {
+.my-words-container p {
   margin: 30px;
 }
 
-.my-words p {
+.my-words-container p {
   padding: 0;
   margin: 0;
   font-size: 20px;
   text-align: center;
 }
 
-.my-words button {
+.my-words-container button {
   border-radius: 40px;
   border: none;
   margin: 20px;
@@ -464,6 +465,10 @@ h2 {
   .feature-projects-btn button {
     width: 100%;
   }
+
+  .my-words-container {
+    margin: 50px;
+  }
 }
 
 /* desktop */
@@ -599,7 +604,7 @@ h2 {
     width: 100%;
   }
 
-  .my-words img {
+  .my-words-container img {
     width: 25%;
   }
 
@@ -660,5 +665,9 @@ h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+
+  .my-words-container {
+    margin: 65px;
   }
 }

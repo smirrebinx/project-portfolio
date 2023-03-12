@@ -454,13 +454,6 @@ h1 {
 
   /* Featured Projects */
 
-  .featured-projects-img img {
-    flex-basis: 20%;
-    height: 280px;
-    width: 184px;
-    object-fit: cover;
-  }
-
   .featured-projects .fa-github,
   .fa-globe {
     font-size: 18px;
@@ -479,7 +472,7 @@ h1 {
   .featured-projects-flex-parent {
     display: flex;
     flex-direction: row;
-    margin: 0 20% 0 20%;
+    margin: 0 20px 0 20px;
   }
 
   .featured-projects-flex-child {
@@ -489,6 +482,10 @@ h1 {
     height: fit-content;
     margin-bottom: 15%;
     margin-right: 20px;
+  }
+
+  .featured-projects-flex-child img {
+    margin-top: 100px;
   }
 
   .featured-projects h3 {

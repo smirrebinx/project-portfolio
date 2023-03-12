@@ -420,23 +420,6 @@ h1 {
 
 /*tablet*/
 @media ((min-width: 667px) and (max-width: 1024px)) {
-  /* .logo-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .logo-img {
-    display: flex;
-  }
-
-  .grid-parent-header {
-    display: flex;
-    flex-direction: column-reverse;
-  }*/
-
   h1 {
     font-size: 28px;
   }
@@ -455,16 +438,15 @@ h1 {
   .header-section .title {
     margin-top: 80px;
   }
-  /*
-  .profilepicturebox img {
-    width: 20%;
-    height: auto;
-    margin-top: 60px;
-  }
 
-  .title {
-    margin-top: 80px;
-  } */
+  /* Featured Projects */
+
+  .featured-projects-img img {
+    flex-basis: 20%;
+    height: 280px;
+    width: 184px;
+    object-fit: cover;
+  }
 
   .featured-projects .fa-github,
   .fa-globe {
@@ -498,7 +480,6 @@ h1 {
 
   .featured-projects h3 {
     margin: 50px 0 45px 0;
-    font-size: var(--heading-h3-font-size);
   }
 
   .featured-projects h4 {
@@ -506,10 +487,7 @@ h1 {
   }
 
   .featured-projects-flex-parent img {
-    max-width: 100%;
-    height: 280px;
-    width: 184px;
-    object-fit: cover;
+    width: 100%;
   }
 
   .feature-projects-btn {
@@ -522,9 +500,16 @@ h1 {
     width: 100%;
   }
 
-  .my-words-container {
-    margin: 50px;
+  /* Skills */
+  .skills-flex-parent {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 5px;
+    margin: auto 150px;
   }
+
+  /* Footer */
 
   .footer-title h3 {
     font-size: 50px;
@@ -738,47 +723,4 @@ h1 {
     margin: 0;
     padding-top: 0;
   }
-
-  /* .time-to-talk-section {
-    margin: 0 20% 0 20%;
-  }
-
-  .time-to-talk-section h2 {
-    margin-top: 100px;
-  }
-
-  .time-to-talk-section h3,
-  .time-to-talk-section h4 {
-    text-align: center;
-  }
-
-  .time-to-talk-section h4 {
-    margin-bottom: 200px;
-  }
-
-  .time-to-talk-section img {
-    border-radius: 50%;
-    width: 25%;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-
-  .time-to-talk-flex-parent {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-  }
-
-  .time-to-talk-flex-child {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  } */
-
-  /* .my-words-container {
-    margin: 65px;
-  } */
 }

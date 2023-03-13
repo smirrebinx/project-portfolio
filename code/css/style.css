@@ -269,11 +269,6 @@ h1 {
   font-family: var(--headings-font-family);
 }
 
-/* .my-words-container {
-  margin: 30px;
-  background-color: var(--tertiary-background-color);
-}*/
-
 .my-words-section-title {
   color: var(--secondary-text-color);
   font-size: 2.6em;
@@ -361,10 +356,6 @@ h1 {
   background-color: var(--tertiary-background-color);
 }
 
-/* .time-to-talk-section h2 {
-  text-align: center;
-} */
-
 /* Footer section */
 
 .footer-section {
@@ -415,10 +406,10 @@ h1 {
   justify-content: center;
 }
 
-/*tablet*/
-@media ((min-width: 667px) and (max-width: 1024px)) {
-  /* Header */
+/* ---- TABLET ----- */
 
+@media only screen and (min-width: 744px) {
+  /* Header */
   .logo-container .logo-img {
     display: flex;
     flex-direction: column;
@@ -521,7 +512,6 @@ h1 {
   }
 
   /* Footer */
-
   .footer-title h3 {
     font-size: 50px;
     font-weight: 900px;
@@ -551,8 +541,8 @@ h1 {
   }
 }
 
-/* desktop */
-@media (min-width: 1024px) {
+/* ---- DESKTOP ---- */
+@media only screen and (min-width: 1280px) {
   p,
   li {
     font-size: 20px;

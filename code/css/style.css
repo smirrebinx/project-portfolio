@@ -107,6 +107,7 @@ h1 {
   color: var(--secondary-text-color);
   opacity: 0.6;
   font-size: 28px;
+  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
 }
 
 .fa-linkedin-in:hover,
@@ -542,7 +543,7 @@ h1 {
 
   .logo-container {
     display: flex;
-    width: 113%;
+    width: 100%;
     height: 100%;
     background-color: var(--secondary-background-color);
   }

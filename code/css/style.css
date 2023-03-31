@@ -461,7 +461,6 @@ h1 {
     flex-direction: column;
     max-width: 100%;
     height: fit-content;
-    margin-bottom: 15%;
     margin-right: 20px;
   }
 
@@ -639,7 +638,8 @@ h1 {
   .featured-projects-flex-parent {
     display: flex;
     flex-direction: row;
-    margin: 0 20% 0 20%;
+    justify-content: center;
+    margin: 0 20% 2% 20%;
   }
 
   .featured-projects-flex-child {
@@ -647,7 +647,6 @@ h1 {
     flex-direction: column;
     max-width: 100%;
     height: fit-content;
-    margin-bottom: 15%;
     margin-right: 20px;
   }
 

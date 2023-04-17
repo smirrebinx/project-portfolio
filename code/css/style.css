@@ -156,12 +156,7 @@ h1 {
   height: auto;
   align-items: center;
   box-shadow: var(--box-shadow);
-}
-
-.my-words-img {
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
+  border: 0.3rem solid var(--secondary-background-color);
 }
 
 .featured-projects h3 {
@@ -281,7 +276,7 @@ h1 {
   margin-bottom: 18px;
 }
 
-.read-article-btn button {
+.read-article-btn {
   display: flex;
   background-color: var(--btn3-color);
   width: 50%;
@@ -289,12 +284,19 @@ h1 {
   border-radius: 40px;
   border: none;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   margin: 5px 0 50px 0;
-  filter: var(--drop-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .read-article-btn:hover {
   background-color: var(--btn2-color);
+}
+
+.fa-newspaper {
+  margin-right: 0.5rem;
+  filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
 }
 
 .skills-flex-parent {
@@ -704,10 +706,15 @@ h1 {
   }
 
   .blog-image {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
     object-fit: cover;
     width: 450px;
     height: 354px;
     overflow: hidden;
+    border: 0.3rem solid var(--secondary-background-color);
+    box-shadow: var(--box-shadow);
   }
 
   .project-text {

@@ -151,8 +151,10 @@ h1 {
 }
 
 .featured-projects-img {
+  display: flex;
   width: 100%;
   height: auto;
+  align-items: center;
 }
 
 .my-words-img {

@@ -257,6 +257,27 @@ h1 {
   font-family: var(--headings-font-family);
 }
 
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.blog-image {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-fit: cover;
+  overflow: hidden;
+  border: 0.3rem solid var(--secondary-background-color);
+  box-shadow: var(--box-shadow);
+}
+
+.blog-container li {
+  font-size: 24px;
+  margin-left: 2rem;
+}
+
 .my-words-section-title {
   color: var(--secondary-text-color);
   font-size: 2.6em;
@@ -502,6 +523,22 @@ h1 {
     width: 100%;
   }
 
+  /* My words */
+  /* .blog-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: auto 60px;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    object-fit: cover;
+  } */
+
   /* Skills */
   .skills-flex-parent {
     display: grid;
@@ -688,18 +725,14 @@ h1 {
 
   .my-words-section {
     text-align: center;
-    margin-bottom: 560px;
+    margin-bottom: 40rem;
   }
-
-  /* .my-words-section-title {
-    text-align: left;
-  } */
 
   .blog-container {
     display: flex;
     flex-direction: row;
     gap: 70px;
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 100%;
     height: 354px;
     max-width: 50%;

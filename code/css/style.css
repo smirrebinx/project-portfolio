@@ -156,7 +156,7 @@ h1 {
   height: auto;
   align-items: center;
   box-shadow: var(--box-shadow);
-  border: 0.3rem solid var(--secondary-background-color);
+  border: 0.3rem outset var( --secondary-text-color);
 }
 
 .featured-projects h3 {
@@ -269,7 +269,7 @@ h1 {
   overflow: hidden;
   object-fit: cover;
   overflow: hidden;
-  border: 0.3rem solid var(--secondary-background-color);
+  border: 0.3rem outset var(--secondary-background-color);
   box-shadow: var(--box-shadow);
 }
 
@@ -746,8 +746,6 @@ h1 {
     width: 450px;
     height: 354px;
     overflow: hidden;
-    border: 0.3rem solid var(--secondary-background-color);
-    box-shadow: var(--box-shadow);
   }
 
   .project-text {

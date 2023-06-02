@@ -364,18 +364,26 @@ h1 {
 
 .highlight-header-one {
   background-color: var(--secondary-text-color);
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .highlight-header-two {
   background-color: var(--tertiary-background-color);
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .highlight-header-three {
   background-color: var(--secondary-background-color);
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .highlight-header-four {
   background-color: var(--tertiary-background-color);
+  padding: 8px;
+  border-radius: 5px;
 }
 
 /* Footer section */

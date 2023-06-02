@@ -133,14 +133,20 @@ h1 {
 
 .highlight-one {
   background-color: var(--secondary-text-color);
+  padding: 0 8px;
+  border-radius: 5px;
 }
 
 .highlight-two {
   background-color: var(--tertiary-background-color);
+  padding: 0 8px;
+  border-radius: 5px;
 }
 
 .highlight-three {
   background-color: var(--secondary-background-color);
+  padding: 0 8px;
+  border-radius: 5px;
 }
 
 .featured-projects h4 {

@@ -162,7 +162,7 @@ h1 {
   height: auto;
   align-items: center;
   box-shadow: var(--box-shadow);
-  border: 0.3rem outset var( --secondary-text-color);
+  border: 0.3rem outset var(--secondary-text-color);
 }
 
 .featured-projects h3 {
@@ -536,22 +536,6 @@ h1 {
   .feature-projects-btn button {
     width: 100%;
   }
-
-  /* My words */
-  /* .blog-container {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin: auto 60px;
-  }
-
-  .blog-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    overflow: hidden;
-    object-fit: cover;
-  } */
 
   /* Skills */
   .skills-flex-parent {

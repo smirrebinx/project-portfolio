@@ -576,7 +576,8 @@ h1 {
   }
 
   .link {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: var(--secondary-text-color);
   }
 }

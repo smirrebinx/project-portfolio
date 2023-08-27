@@ -802,6 +802,7 @@ h1 {
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+    align-items: center;
   }
 
   .contact-wrapper {

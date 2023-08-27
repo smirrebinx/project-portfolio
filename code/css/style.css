@@ -574,6 +574,10 @@ h1 {
     margin: 0;
     padding-top: 0;
   }
+
+  .link {
+    text-align: center;
+  }
 }
 
 /* ---- DESKTOP ---- */

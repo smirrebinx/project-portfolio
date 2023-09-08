@@ -575,6 +575,13 @@ h1 {
     padding-top: 0;
   }
 
+  .to-the-top-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
   .link {
     display: flex;
     justify-content: center;

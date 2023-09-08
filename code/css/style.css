@@ -442,6 +442,21 @@ h1 {
   justify-content: center;
 }
 
+.to-the-top-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text-color);
+  margin-top: 2rem;
+}
+
 /* ---- TABLET ----- */
 
 @media only screen and (min-width: 744px) {
@@ -573,21 +588,6 @@ h1 {
     gap: 32px;
     margin-bottom: 2rem;
     padding-top: 0;
-  }
-
-  .to-the-top-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
-
-  .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--secondary-text-color);
-    margin-top: 2rem;
   }
 }
 

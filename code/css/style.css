@@ -158,7 +158,8 @@ h1 {
 
 .featured-projects-img {
   display: flex;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: auto;
   align-items: center;
   box-shadow: var(--box-shadow);
@@ -513,6 +514,10 @@ h1 {
     width: 10%;
   }
 
+  .featured-projects-img {
+    width: 100%;
+  }
+
   .featured-projects-flex-parent {
     display: flex;
     flex-direction: row;
@@ -649,6 +654,10 @@ h1 {
     height: 145px;
     top: 196px;
     margin: 20px 0 0 200px;
+  }
+
+  .featured-projects-img {
+    width: 100%;
   }
 
   .icons {

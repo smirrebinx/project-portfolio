@@ -464,6 +464,17 @@ h1 {
   margin-top: 4rem;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 3.5rem;
+  color: var(--secondary-text-color);
+}
+
+.to-the-top-link-a {
+  text-decoration: none;
+}
+
+
 .link {
   display: flex;
   justify-content: center;

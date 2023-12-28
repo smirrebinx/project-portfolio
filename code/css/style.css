@@ -460,7 +460,7 @@ h1 {
 .to-the-top-link {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center flex-end;
   margin-top: 2rem;
 }
 

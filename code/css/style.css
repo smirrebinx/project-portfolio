@@ -36,47 +36,6 @@ html {
   scroll-behavior: smooth;
 }
 
-nav {
-  display: none;
-}
-
-/* 
-nav {
-  position: sticky;
-  top: 0;
-  background-color: rgba(148, 177, 170, 0.5);
-  padding: 0.625rem 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  line-height: 0;
-}
-
-nav ul li {
-  padding: 1rem;
-  font-size: 1.3rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--primary-text-color);
-  line-height: inherit;
-  font-family: var(--headings-font-family);
-  font-size: 1.2rem;
-}
-
-.logo-nav {
-  display: flex;
-  border-radius: 50%;
-  height: 3rem;
-  margin: auto;
-}
-Sticky Nav Bar */
 
 /* Content Section Styling */
 section {
@@ -104,6 +63,35 @@ section h1, h2, h3, h4, h5 {
     width: 30vh;
     height: 40vh;
     border-bottom: solid var(--secondary-background-color);
+  }
+
+  nav {
+    position: -webkit-sticky; /* For Safari*/
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: rgba(148, 177, 170, 0.5);
+  }
+
+  nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: inherit;
+  font-family: var(--headings-font-family);
+  font-size: 0.9rem;
+}
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
   }
 
 .profile-picture {
@@ -544,6 +532,31 @@ h1 {
   margin-top: 2rem;
 }
 
+/* Mobile */
+@media only screen and (max-width: 744px) {
+
+  .logo-nav {
+    display:none;
+  }
+
+  .hamburger {
+    display: block;
+    text-align: right;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    display: none; /* Hide the nav links by default*/
+  }
+
+  .nav-active {
+    display: flex; /* Show nav links when active*/
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* ---- TABLET ----- */
 
 @media only screen and (min-width: 744px) {
@@ -563,27 +576,27 @@ h1 {
   z-index: 1000;
 }
 
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
   nav ul {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   line-height: 0;
 }
 
   nav a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: inherit;
-  font-family: var(--headings-font-family);
   font-size: 1.1rem;
 }
 
-  nav ul li {
-  display: inline-block;
-  padding: 1rem;
+.hamburger {
+  display: none;
 }
 
 .logo-nav {
@@ -739,26 +752,26 @@ h1 {
 }
 
   nav ul {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   line-height: 0;
 }
 
   nav a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: inherit;
-  font-family: var(--headings-font-family);
   font-size: 1.1rem;
 }
 
   nav ul li {
   display: inline-block;
   padding: 1rem;
+}
+
+.hamburger {
+  display: none;
 }
 
 .logo-nav {

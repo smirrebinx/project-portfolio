@@ -66,6 +66,9 @@ section h1, h2, h3, h4, h5 {
   }
 
   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: -webkit-sticky; /* For Safari*/
     position: sticky;
     top:0;
@@ -85,6 +88,19 @@ section h1, h2, h3, h4, h5 {
     display: none;
     cursor: pointer;
   }
+
+  button.hamburger {
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+  }
+  
+  button.hamburger::before,
+  button.hamburger::after {
+  display: none;
+}
+
 
   nav ul {
     display: flex;
@@ -535,25 +551,45 @@ h1 {
 /* Mobile */
 @media only screen and (max-width: 744px) {
 
+    nav {
+    width: 100%;
+    background-color: rgba(148, 177, 170, 0.9);
+  }
+
   .logo-nav {
     display:none;
   }
 
   .hamburger {
-    display: block;
-    text-align: right;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
     margin: 0 1rem;
     font-size: 1.5rem;
   }
 
   nav ul {
     display: none; /* Hide the nav links by default*/
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .nav-active {
     display: flex; /* Show nav links when active*/
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    background-color: rgba(148, 177, 170, 0.9);
   }
 }
 

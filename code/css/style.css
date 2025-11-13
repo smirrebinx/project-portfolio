@@ -336,7 +336,6 @@ h1 {
 .date {
   color: #eb5577;
   font-weight: 900;
-  padding-top: 20px;
   font-family: var(--headings-font-family);
 }
 
@@ -696,6 +695,7 @@ nav ul li {
     display: flex;
     flex-direction: row;
     margin: 0 20px 0 20px;
+    align-items: center;
   }
 
   .featured-projects-flex-child {
@@ -707,7 +707,7 @@ nav ul li {
   }
 
   .featured-projects-flex-child img {
-    margin-top: 100px;
+    margin-top: 0;
   }
 
   .featured-projects h3 {
@@ -860,26 +860,22 @@ nav ul li {
     margin-left: 200px;
   }
 
-  .profile-paragraph,
-  .icons {
-    max-width: 500px;
-    height: 145px;
-    top: 196px;
-    margin: 20px 0 0 200px;
-  }
+.profile-paragraph {
+  max-width: 500px;
+  margin: 20px 0 5px 200px;
+}
 
   .featured-projects-img {
     width: 100%;
   }
 
-  .icons {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 32px;
-    padding: 40px 0px;
-  }
-
+ .icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 32px;
+  padding: 5px 0;
+}
   .title {
     margin-top: 170px;
   }
@@ -924,6 +920,7 @@ nav ul li {
     flex-direction: row;
     justify-content: center;
     margin: 0 20% 2% 20%;
+    align-items: center;
   }
 
   .featured-projects-flex-child {
@@ -945,7 +942,7 @@ nav ul li {
   .featured-projects-flex-parent img {
     width: 350px;
     height: auto;
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .feature-projects-btn {

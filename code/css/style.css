@@ -590,6 +590,11 @@ h1 {
     margin-top: 0;
     background-color: rgba(148, 177, 170, 0.9);
   }
+
+  .footer-image {
+     display: flex;
+     justify-content: center;
+  }
 }
 
 /* ---- TABLET ----- */

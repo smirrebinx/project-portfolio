@@ -14,7 +14,7 @@
   --btn3-color: #fdf6f6;
   --drop-shadow: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --heading-h3-font-size: 40px;
+  --heading-h3-font-size: 2.5rem;
 }
 
 @font-face {
@@ -51,11 +51,6 @@ body {
 section {
   padding: 0.9375rem;
   margin: 0.625rem 0;
-}
-
-section h1, h2, h3, h4, h5 {
-  padding-top: 3.75rem;
-  margin-top: -3.75rem;
 }
 
 /* logo */
@@ -149,11 +144,11 @@ h6 {
 
 p,
 li {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 button {
-  font-size: 22px;
+  font-size: 1rem;
   font-family: var(--paragraph-font-family);
 }
 
@@ -175,7 +170,7 @@ button:hover {
 
 h1 {
   color: var(--secondary-text-color);
-  font-size: 45px;
+  font-size: 2rem;
 }
 
 .title h2 {
@@ -195,13 +190,35 @@ h1 {
   margin: 20px 10px 20px 20px;
   color: var(--secondary-text-color);
   opacity: 0.6;
-  font-size: 28px;
+  font-size: 1.5rem;
   filter: drop-shadow(2px 4px 1px rgb(0 0 0 / 0.3));
 }
 
 .fa-linkedin-in:hover,
 .fa-github:hover {
   opacity: 1;
+}
+
+/* Text label under the Linkedin and Github icons */
+.icons a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icons a i {
+  margin-bottom: 8px;
+}
+
+.icon-label {
+  font-family: var(--paragraph-font-family);
+  font-size: 1rem;
+  color: var(--primary-text-color);
+}
+
+.icons a:hover .icon-label {
+  text-decoration: underline;
 }
 
 .tech {
@@ -240,7 +257,7 @@ h1 {
 .featured-projects h4 {
   margin-top: 30px;
   margin-left: 30px;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 900;
 }
 
@@ -275,7 +292,7 @@ h1 {
   color: #fff;
   padding: 4px;
   margin: 2px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21.6px;
 }
 
@@ -286,7 +303,7 @@ h1 {
 
 .featured-projects .fa-github,
 .fa-globe {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -369,7 +386,7 @@ h1 {
 }
 
 .blog-container li {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-left: 2rem;
 }
 
@@ -382,11 +399,11 @@ h1 {
 .project-title {
   display: flex;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .project-text {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -443,7 +460,7 @@ h1 {
 
 .skills-section h4 {
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .skills-ul {
@@ -669,7 +686,7 @@ nav ul li {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 2rem;
   }
 
   .grid-parent-profile-img-and-title {
@@ -691,7 +708,7 @@ nav ul li {
 
   .featured-projects .fa-github,
   .fa-globe {
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 0;
     text-align: center;
   }
@@ -760,7 +777,7 @@ nav ul li {
 
   /* Footer */
   .footer-title h3 {
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 900;
   }
 
@@ -792,7 +809,7 @@ nav ul li {
 @media only screen and (min-width: 1280px) {
   p,
   li {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   nav {
@@ -899,7 +916,7 @@ nav ul li {
 
   .fa-linkedin-in,
   .fa-github {
-    font-size: 25px;
+    font-size: 1.5rem;
     margin-top: 77px;
   }
 
@@ -919,7 +936,7 @@ nav ul li {
 
   .featured-projects .fa-github,
   .fa-globe {
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 0;
     text-align: center;
   }
@@ -1034,7 +1051,7 @@ nav ul li {
   }
 
   .footer-title {
-    font-size: 120px;
+    font-size: 7.5rem;
     font-weight: 900;
   }
 

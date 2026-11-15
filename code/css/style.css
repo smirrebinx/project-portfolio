@@ -839,7 +839,7 @@ nav ul li {
     max-width: 50vh;
     max-height: 50vw;
     box-shadow: var(--box-shadow);
-    border-radius: 5px;
+    border-radius: 50%;
   }
 
    .logo-container {

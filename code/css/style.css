@@ -92,7 +92,7 @@ section h1, h2, h3, h4, h5 {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   line-height: inherit;
-  font-family: "Satoshi-Bold", system-ui, sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
 }
 

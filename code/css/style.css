@@ -1,8 +1,8 @@
 /* project-portfolio */
 
 :root {
-  --headings-font-family: "Satoshi-Bold", bold;
-  --paragraph-font-family: "EB Garamond", serif;
+  --headings-font-family: "New Yorker", Georgia, serif;
+  --paragraph-font-family: "Satoshi", system-ui, sans-serif;
   --primary-text-color: #000;
   --secondary-text-color: #568b7f;
   --tertiary-text-color: #fff;
@@ -17,7 +17,13 @@
   --heading-h3-font-size: 40px;
 }
 
-@import url("css/satoshi.css");
+@font-face {
+  font-family: 'New Yorker';
+  src: url('../fonts/NewYorker/NewYorker.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: SatoshiRegular;
@@ -34,6 +40,10 @@
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--paragraph-font-family);
 }
 
 
@@ -78,10 +88,10 @@ section h1, h2, h3, h4, h5 {
 
   nav a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--primary-text-color);
   line-height: inherit;
   font-family: var(--headings-font-family);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
   .hamburger {
@@ -124,7 +134,9 @@ section h1, h2, h3, h4, h5 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: var(--headings-font-family);
   margin-right: 0;
   padding-right: 0;
@@ -142,12 +154,12 @@ li {
 
 button {
   font-size: 22px;
+  font-family: var(--paragraph-font-family);
 }
 
 p,
 button,
 ul {
-  font-family: var(--paragraph-font-family);
   color: var(--primary-text-color);
 }
 
@@ -632,7 +644,7 @@ nav ul li {
 }
 
   nav a {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .hamburger {
@@ -803,7 +815,7 @@ nav ul li {
 }
 
   nav a {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
   nav ul li {

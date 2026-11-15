@@ -1,8 +1,8 @@
 /* project-portfolio */
 
 :root {
-  --headings-font-family: "Satoshi-Bold", bold;
-  --paragraph-font-family: "EB Garamond", serif;
+  --headings-font-family: "New Yorker", Georgia, serif;
+  --paragraph-font-family: "Satoshi", system-ui, sans-serif;
   --primary-text-color: #000;
   --secondary-text-color: #568b7f;
   --tertiary-text-color: #fff;
@@ -135,7 +135,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "New Yorker", Georgia, serif;
+  font-family: var(--headings-font-family);
   margin-right: 0;
   padding-right: 0;
 }

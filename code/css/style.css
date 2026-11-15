@@ -17,6 +17,14 @@
   --heading-h3-font-size: 40px;
 }
 
+@font-face {
+  font-family: 'New Yorker';
+  src: url('../fonts/NewYorker/NewYorker.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import url("css/satoshi.css");
 
 @font-face {
@@ -124,8 +132,10 @@ section h1, h2, h3, h4, h5 {
 h1,
 h2,
 h3,
-h4 {
-  font-family: var(--headings-font-family);
+h4,
+h5,
+h6 {
+  font-family: "New Yorker", Georgia, serif;
   margin-right: 0;
   padding-right: 0;
 }

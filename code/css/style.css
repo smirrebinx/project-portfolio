@@ -44,6 +44,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: var(--paragraph-font-family);
+}
+
 
 /* Content Section Styling */
 section {
@@ -88,7 +92,7 @@ section h1, h2, h3, h4, h5 {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   line-height: inherit;
-  font-family: var(--headings-font-family);
+  font-family: "Satoshi-Bold", system-ui, sans-serif;
   font-size: 1.5rem;
 }
 
@@ -152,12 +156,12 @@ li {
 
 button {
   font-size: 22px;
+  font-family: var(--paragraph-font-family);
 }
 
 p,
 button,
 ul {
-  font-family: var(--paragraph-font-family);
   color: var(--primary-text-color);
 }
 
